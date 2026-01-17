@@ -55,7 +55,30 @@
     // 其它无法识别
     return null;
   }
+  function renderApps(){
+  const wrap = document.getElementById("apps");
+  if (!wrap || !Array.isArray(data.apps)) return;
 
+  wrap.innerHTML = "";
+
+  data.apps.forEach(a => {
+    const link = document.createElement("a");
+    link.className = "app";
+    link.href = a.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+
+    link.innerHTML = `
+      <div class="appIcon">${a.icon || "🔗"}</div>
+      <div class="appMeta">
+        <div class="appTitle">${a.name}</div>
+        <div class="appSub">${a.desc || ""}</div>
+      </div>
+    `;
+
+    wrap.appendChild(link);
+  });
+}
   function faviconFor(url) {
     const u = normalizeUrl(url);
     if (!u) return "";
@@ -159,6 +182,7 @@
     if (footer) footer.textContent = data.footer || "";
 
     setClock();
+    renderApps();
     renderSection("navCols", data.nav);
     renderSection("bookmarkCols", data.bookmarks);
     loadWeather();
