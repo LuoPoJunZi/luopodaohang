@@ -1,7 +1,6 @@
 window.NAV_DATA = {
   footer: "Personal Navigation",
 
-  // ===== 博客区：放最常用/最高频 =====
   apps: [
     { name: "ChatGPT", desc: "国外大模型", url: "https://chatgpt.com", icon: "🤖" },
     { name: "Claude", desc: "国外大模型", url: "https://claude.ai", icon: "🧠" },
@@ -9,7 +8,6 @@ window.NAV_DATA = {
     { name: "Cloudflare", desc: "控制台", url: "https://dash.cloudflare.com", icon: "☁️" }
   ],
 
-  // ===== 书签区：其余所有内容 =====
   bookmarks: [
     {
       title: "国外大模型",
@@ -41,8 +39,6 @@ window.NAV_DATA = {
       items: [
         { name: "Cloudcone", url: "https://app.cloudcone.com" },
         { name: "Racknerd", url: "https://my.racknerd.com" },
-        { name: "Colocrossing", url: "https://cloud.colocrossing.com" },
-        { name: "Alice", url: "https://app.alice.ws" },
         { name: "Rarecloud", url: "https://rarecloud.io" },
         { name: "Claw", url: "https://claw.cloud" }
       ]
@@ -54,10 +50,8 @@ window.NAV_DATA = {
         { name: "V2rayN - Windows", url: "https://github.com/2dust/v2rayN/releases/" },
         { name: "V2rayNG - Android", url: "https://github.com/2dust/v2rayNG/releases" },
         { name: "NekoBox - Android", url: "https://github.com/MatsuriDayo/NekoBoxForAndroid" },
-        { name: "Sing-box - Android", url: "https://install.appcenter.ms/users/nekohasekai/apps/sfa/distribution_groups/publictest" },
-        { name: "Shadowrocket - iOS", url: "https://apps.apple.com/app/shadowrocket/id932747118" },
-        { name: "Clash Verge", url: "https://github.com/clash-verge-rev/clash-verge-rev/releases" },
-        { name: "Hiddify", url: "https://github.com/hiddify/hiddify-app/releases" }
+        { name: "Sing-box - Android", url: "https://sing-box.sagernet.org" },
+        { name: "Shadowrocket - iOS", url: "https://apps.apple.com/app/shadowrocket/id932747118" }
       ]
     },
 
@@ -66,10 +60,7 @@ window.NAV_DATA = {
       items: [
         { name: "IP.sb", url: "https://ip.sb" },
         { name: "Whoer", url: "https://whoer.net" },
-        { name: "Scamalytics", url: "https://scamalytics.com" },
         { name: "IPInfo", url: "https://ipinfo.io" },
-        { name: "IPHub", url: "https://iphub.info" },
-        { name: "IP123", url: "https://ip123.in" },
         { name: "ITDog Ping", url: "https://www.itdog.cn" },
         { name: "Fast测速", url: "https://fast.com" },
         { name: "Speedtest", url: "https://www.speedtest.net" }
@@ -80,17 +71,7 @@ window.NAV_DATA = {
       title: "域名相关",
       items: [
         { name: "Porkbun", url: "https://porkbun.com" },
-        { name: "Spaceship", url: "https://www.spaceship.com" },
-        { name: "TLD-List 价格对比", url: "https://zh-hans.tld-list.com" }
-      ]
-    },
-
-    {
-      title: "在线工具",
-      items: [
-        { name: "临时邮箱", url: "https://temp-mail.org/" },
-        { name: "二维码生成", url: "https://www.qr-code-generator.com" },
-        { name: "DNS检测", url: "https://tool.dnspod.cn" }
+        { name: "Spaceship", url: "https://www.spaceship.com" }
       ]
     }
   ]
