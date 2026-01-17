@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>导航页</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="top">
+      <div class="datetime">
+        <div id="dateLine" class="dateLine"></div>
+      </div>
+
+      <!-- 右上角：先做成“信息位”，你也可替换为天气 -->
+      <div class="infoBox">
+        <div class="infoIcon" id="infoIcon">⛅</div>
+        <div class="infoText">
+          <div id="infoLine1">13℃</div>
+          <div id="infoLine2">75%</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1 id="greeting">下午好</h1>
+    </section>
+
+    <section class="section">
+      <h2>应用</h2>
+      <div class="apps" id="apps"></div>
+    </section>
+
+    <section class="section">
+      <h2>书签</h2>
+      <div class="cols" id="bookmarkCols"></div>
+    </section>
+
+    <footer class="footer">
+      <span id="footerText"></span>
+    </footer>
+  </main>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
